@@ -23,9 +23,12 @@ get marker
 
 https://akhamat.herokuapp.com/maker/get/login?c={"data":{"email": "akhamat@mifx.com","password":"secret","radius":"23"},"meta":{"cursor":{"count":10,"previous":null,"current":null},"location":[134.90438543,-185.485439],"language":"id","app":"desktop","timestamp":1502981540}}
 
+
+
 get marker spesific
 
-https://akhamat.herokuapp.com/maker/data/2/login?c={"data":{"email": "akhamat@mifx.com","password":"secret","radius":"23"},"meta":{"cursor":{"count":10,"previous":null,"current":null},"location":[134.90438543,-185.485439],"language":"id","app":"desktop","timestamp":1502981540}}
+https://akhamat.herokuapp.com/maker/data/{idnya brapa}/login?c={"data":{"email": "akhamat@mifx.com","password":"secret","radius":"23"},"meta":{"cursor":{"count":10,"previous":null,"current":null},"location":[134.90438543,-185.485439],"language":"id","app":"desktop","timestamp":1502981540}}
+
 
 
 
@@ -35,6 +38,27 @@ method post
  https://akhamat.herokuapp.com/maker/add
 params 
  c={"data":{"email": "akhamat@mifx.com","password":"secret","radius":"23"},"meta":{"cursor":{"count":10,"previous":null,"current":null},"location":[134.90438543,-185.485439],"language":"id","app":"desktop","timestamp":1502981540}}
+
+
+ edit marker  ini pake header auth
+
+method put
+ https://akhamat.herokuapp.com/maker/getPut/{id nya}
+params 
+ c={"data":{"email": "akhamat@mifx.com","password":"secret","radius":"23"},"meta":{"cursor":{"count":10,"previous":null,"current":null},"location":[134.90438543,-185.485439],"language":"id","app":"desktop","timestamp":1502981540}}
+
+ delete marker  ini pake header auth
+
+method delete
+ https://akhamat.herokuapp.com/maker/delete/{idnya brapa}
+params 
+ c={"data":{"email": "akhamat@mifx.com","password":"secret","radius":"23"},"meta":{"cursor":{"count":10,"previous":null,"current":null},"location":[134.90438543,-185.485439],"language":"id","app":"desktop","timestamp":1502981540}}
+
+
+
+
+
+
 
 
 GET PROFILE => Gak pake header
