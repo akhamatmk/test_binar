@@ -26,9 +26,8 @@ $app->get('login', 'AuthController@login');
 $app->get('maker/get', ['uses' => 'AuthController@getMarker', 'middleware' => ['cors', 'jwt.auth']]);
 $app->get('maker/data/{id}', ['uses' => 'AuthController@getFirstMarker', 'middleware' => ['cors', 'jwt.auth']]);
 $app->post('maker/add', ['uses' => 'AuthController@add', 'middleware' => ['cors', 'jwt.auth']]);
-$app->get('maker/data/{id}', ['uses' => 'AuthController@add', 'middleware' => ['cors', 'jwt.auth']]);
-$app->put('maker/edit/{id}', ['uses' => 'AuthController@add', 'middleware' => ['cors', 'jwt.auth']]);
-$app->delete('maker/hapus/{id}', ['uses' => 'AuthController@add', 'middleware' => ['cors', 'jwt.auth']]);
+$app->put('maker/edit/{id}', ['uses' => 'AuthController@getPut', 'middleware' => ['cors', 'jwt.auth']]);
+$app->delete('maker/hapus/{id}', ['uses' => 'AuthController@delete', 'middleware' => ['cors', 'jwt.auth']]);
 
 
 
